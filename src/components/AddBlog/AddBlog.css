@@ -1,0 +1,52 @@
+.add-blog{
+  width:450px;
+  margin:40px auto;
+  padding:30px;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.add-blog label{
+  display:flex;
+  flex-direction:column;
+  font-size:14px;
+  font-weight:600;
+  color:#333;
+}
+
+.add-blog input,
+.add-blog select{
+  margin-top:6px;
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  font-size:14px;
+  outline:none;
+}
+
+.add-blog input:focus,
+.add-blog select:focus{
+  border-color:#ff6b6b;
+}
+
+.add-blog button{
+  margin-top:10px;
+  padding:12px;
+  border:none;
+  background:rgb(162, 86, 233);
+  color:white;
+  font-size:15px;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.add-blog button:hover{
+  background:rgb(97, 16, 173);
+}

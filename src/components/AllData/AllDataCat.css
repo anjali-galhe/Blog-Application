@@ -1,0 +1,48 @@
+/* Container for all items */
+.allData-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Individual Card Styling */
+.allData-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.allData-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Styling */
+.allData-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Prevents stretching */
+}
+
+/* Text Content Styling */
+.allData-info {
+  padding: 15px;
+}
+
+.allData-info h2 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.allData-info h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+}

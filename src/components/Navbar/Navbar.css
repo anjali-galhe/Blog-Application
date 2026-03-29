@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+/* Search Section */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.search-input {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.9rem;
+  width: 200px;
+  /* Smooth entrance animation */
+  animation: slideIn 0.3s ease-out;
+}
+
+.search-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.search-icon:hover {
+  color: #ff4757; /* A nice accent color */
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Animation for the search bar */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Usually, you'd implement a hamburger menu here */
+  }
+}

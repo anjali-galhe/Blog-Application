@@ -1,0 +1,122 @@
+.main-layout-container {
+  display: flex;
+  gap: 40px;
+  padding: 50px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- Left Side: Recent Posts --- */
+.recent-posts {
+  flex: 2; /* Zyada space left side nu */
+}
+
+.recent-posts h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.post-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  transition: opacity 0.3s ease;
+}
+
+.post-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.post-text span {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.post-text h4 {
+  font-size: 1.4rem;
+  margin: 8px 0;
+  color: #222;
+}
+
+.post-text p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* --- Right Side: Sidebar --- */
+.sidebar {
+  flex: 1; /* Choti space right side nu */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-box {
+  background: #fdfdfd;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+}
+
+.sidebar-box h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.sidebar-box h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #ff4757; /* Accent color */
+}
+
+.sidebar-box p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Tag Cloud Styling */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background: #eee;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* --- Mobile View --- */
+@media (max-width: 900px) {
+  .main-layout-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    order: 2; /* Content upar, sidebar thalle */
+  }
+}

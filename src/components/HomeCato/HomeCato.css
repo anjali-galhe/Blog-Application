@@ -1,0 +1,76 @@
+.homeCato-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Takki mobile te cards thalle aa jaan */
+  gap: 30px;
+  padding: 40px 5%;
+  background-color: #ffffff;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background: #fdfdfd;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%; /* Circular shape de layi */
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+/* Hover Effect */
+.category-card:hover {
+  background: #000000; /* Black theme ya jo vi tuhaadi site da main color hai */
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover .icon, 
+.category-card:hover p {
+  color: #ffffff; /* Hover karan te text white ho jayega */
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Text Styling */
+.category-card p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .homeCato-section {
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .category-card {
+    width: 110px;
+    height: 110px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .category-card p {
+    font-size: 0.75rem;
+  }
+}
